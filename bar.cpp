@@ -5,12 +5,12 @@
 namespace test
 {
     
-Bar::Bar(int x)
+Bar::Bar(int x):
+    m_x(x)
 {
-    m_x = x;
 }
 
-void Bar::print()
+void Bar::print() const
 {
     std::cout << "Bar: " << x << std::endl;
 }
